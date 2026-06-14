@@ -15,7 +15,7 @@ export const Footer = () => (
           {IDENTITY.email}
         </a>
         <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-neutral-600">
-          © {new Date().getFullYear()} — Conçu avec une typographie sérieuse et beaucoup de café.
+          © {new Date().getFullYear()} — Mis à jour pour la soutenance BUT3.
         </p>
       </div>
     </div>

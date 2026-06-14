@@ -36,17 +36,17 @@ const Body = ({ children }) => (
 const TabPanels = {
   poursuite: (
     <Body>
-      <p>À l'issue de mon BUT3, j'intègre le <span className="copper-text">Cycle Ingénieur d'ISEP</span> en alternance (3j/2j), spécialisation <em className="font-display">Architecture Logicielle, Data & IA</em>. Je suis en recherche active d'entreprise partenaire pour septembre 2026.</p>
-      <p>Ce choix prolonge naturellement mon parcours : Docker, Jenkins, AWS, Vue 3, Laravel 13, Python ML — autant de domaines que le Cycle Ingénieur approfondira. L'alternance est indispensable pour moi : apprendre en construisant de vrais systèmes, pas uniquement en cours.</p>
+      <p>À la rentrée de septembre 2026, j'intègre le <span className="copper-text">Cycle Ingénieur d'ISEP</span> en alternance, trois jours en entreprise et deux jours à l'école, spécialisation <em className="font-display">Architecture Logicielle, Data & IA</em>. Je suis encore en recherche de l'entreprise qui m'accompagnera sur ces trois prochaines années.</p>
+      <p>Ce choix prolonge le travail déjà entamé avec Docker, Jenkins, AWS, Vue 3, Laravel 13 et les bibliothèques Python de Machine Learning. L'alternance est un choix délibéré : apprendre en construisant des systèmes réels, pas seulement dans un cadre académique.</p>
     </Body>
   ),
   miaam: (
     <Body>
       <Caption src={ASSETS.miaam} alt="Miaam mobile app" caption="Interface Miaam — mode Découverte, Flutter Android" />
-      <p>Miaam est mon projet académique le plus ambitieux. En équipe de 6, nous avons conçu une application mobile Flutter de recommandation de recettes anti-gaspillage alignée sur l'ODD 12.</p>
-      <p>Mon rôle : la brique algorithme. La V1 basée sur une topologie simple des cuisines fonctionnait, mais était rigide. J'ai proposé la migration vers une approche vectorielle — <span className="copper-text">SVD 27 dimensions</span>, similarité cosinus, pondération temporelle des favoris. Résultat : satisfaction utilisateur de 40% à 85%.</p>
-      <p>Ce que j'ai appris : justifier ses choix techniques à une équipe est aussi difficile que les implémenter. Pourquoi 27 dimensions ? Pourquoi la normalisation L2 ? J'ai dû répondre à ces questions devant 5 coéquipiers avant d'écrire une ligne.</p>
-      <p>La plus grande impasse : la fonctionnalité de saisie directe d'ingrédients n'a pas pu être livrée dans les délais. Pivot vers un système de préférences sauvegardées — décision collective difficile, mais la bonne.</p>
+      <p>Miaam est le projet académique le plus dense de mon cursus. En équipe de 6, l'objectif était de concevoir une application mobile Flutter de recommandation de recettes anti-gaspillage, alignée sur l'ODD 12 de l'ONU.</p>
+      <p>Ma responsabilité s'est concentrée sur la brique algorithme. La V1 reposait sur une topologie simple des cuisines, mais ses résultats manquaient de souplesse. J'ai proposé de basculer vers une approche vectorielle : <span className="copper-text">SVD 27 dimensions</span>, similarité cosinus, pondération temporelle des favoris. Résultat : la satisfaction utilisateur est passée de 40% à 85%.</p>
+      <p>Expliquer et défendre ces choix devant le groupe s'est révélé presque aussi exigeant que de les coder. Avant d'écrire la première fonction, il a fallu justifier mathématiquement le choix des 27 dimensions et la nécessité de la normalisation L2, devant mes 5 coéquipiers.</p>
+      <p>Le principal compromis a concerné la saisie directe d'ingrédients, qu'on n'a pas pu finaliser dans les délais. On a réorienté vers un système de préférences sauvegardées, un arbitrage qui a demandé de longs échanges en équipe.</p>
 
       <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-px bg-copper-400/10">
         {[
@@ -70,9 +70,9 @@ const TabPanels = {
   voronoi: (
     <Body>
       <Caption src={ASSETS.voronoi} alt="Voronoi canvas" caption="Rendu Canvas 2D — Phase 1 JavaScript, régions colorées" />
-      <p>Double implémentation d'un générateur de diagrammes de Voronoï, équipe de 3.</p>
-      <p>Le moment le plus formateur : notre implémentation artisanale a échoué après plusieurs jours. J'ai proposé de pivoter vers <span className="copper-text">d3-delaunay</span>. Ce n'était pas abandonner — c'était choisir le bon outil au bon moment.</p>
-      <p>Sur la Phase 2 Python, les tests unitaires ont rattrapé deux bugs de parsing que la revue de code avait manqués. Depuis, je teste par réflexe.</p>
+      <p>Ce projet en équipe de 3 consistait à développer une double implémentation d'un générateur de diagrammes de Voronoï.</p>
+      <p>La phase de développement a été marquée par un pivot. Après plusieurs jours sur une implémentation artisanale, on a constaté qu'elle n'irait pas plus loin et risquait de bloquer la SAE. J'ai proposé d'intégrer <span className="copper-text">d3-delaunay</span>. Convaincre l'équipe d'abandonner du travail déjà fait, en plein milieu du projet, n'a pas été immédiat, mais on n'avait plus le choix avec le temps qui restait.</p>
+      <p>Sur la Phase 2 Python, les tests unitaires ont détecté deux bugs de parsing que la revue de code avait laissés passer. Depuis, j'ai du mal à me convaincre qu'on peut s'en passer, même sous pression.</p>
     </Body>
   ),
   competences: (
@@ -109,25 +109,25 @@ const TabPanels = {
   ),
   devea: (
     <Body>
-      <p>Six mois pour concevoir from scratch un logiciel SAV multi-sites déployé à l'international. C'est la mission la plus exigeante que j'aie conduite.</p>
-      <p>Le logiciel coordonne des centres de réparation et des techniciens terrain sur plusieurs pays : suivi des interventions, gestion des pièces, dossiers clients — avec isolation stricte des données entre sites.</p>
-      <p><span className="copper-text">Défis techniques</span> : modélisation PostgreSQL complexe, RBAC granulaire par site, Docker, Jenkins, interface Vue 3 + TypeScript pensée pour des techniciens terrain.</p>
-      <p>Ce que j'ai découvert de moi-même : quand le périmètre s'est élargi en cours de route, j'ai découpé en livrables itératifs plutôt que de paniquer. J'ai aussi compris que demander de l'aide tôt est une compétence, pas une faiblesse.</p>
-      <p>Culture d'entreprise : réunions de suivi hebdomadaires, code reviews systématiques, documentation exigée. Des pratiques que je ne veux plus quitter.</p>
+      <p>Six mois pour concevoir from scratch un logiciel SAV multi-sites déployé à l'international : la mission la plus exigeante que j'aie menée jusqu'ici.</p>
+      <p>Le logiciel coordonne des centres de réparation et des techniciens sur plusieurs pays : suivi des interventions, gestion des pièces, dossiers clients, avec un cloisonnement strict des données entre sites.</p>
+      <p><span className="copper-text">Défis techniques</span> : modélisation PostgreSQL rigoureuse pour l'isolation des données, RBAC granulaire par site, Docker, Jenkins, et une interface Vue 3 + TypeScript pensée pour des techniciens sur le terrain.</p>
+      <p>Ce que j'ai découvert de moi-même : quand le périmètre s'est élargi en cours de route, j'ai découpé le travail en livrables itératifs plutôt que de paniquer. J'ai aussi compris que solliciter l'équipe dès qu'un blocage apparaît est plus efficace que de chercher à le résoudre seul trop longtemps.</p>
+      <p>Culture d'entreprise : points de suivi hebdomadaires, revues de code systématiques, documentation exigée. Une rigueur que je veux garder pour la suite.</p>
     </Body>
   ),
   fierte: (
     <Body>
-      <p className="font-display italic text-2xl md:text-3xl text-neutral-100"><span className="copper-text">Sagittarius-A-Engine.</span> Pas parce qu'il est le plus utile professionnellement. Parce qu'il est le plus honnête.</p>
-      <p>Simuler 5000+ corps célestes en temps réel, from scratch, sans framework — personne ne me l'a demandé. Je l'ai fait parce que les équations de Kepler m'intéressaient et que je voulais voir jusqu'où j'allais.</p>
-      <p>Ce projet me rappelle pourquoi j'ai choisi ce chemin.</p>
+      <p className="font-display italic text-2xl md:text-3xl text-neutral-100"><span className="copper-text">Sagittarius-A-Engine.</span> Ce n'est probablement pas le projet le plus utile sur mon CV, mais c'est celui que j'ai pris le plus de plaisir à construire.</p>
+      <p>Simuler 5000+ corps célestes en temps réel, sans framework tiers, en s'appuyant sur les équations de Kepler et la modélisation de lentilles gravitationnelles : personne ne me l'a demandé. Je l'ai fait par envie de manipuler ces concepts physiques et de voir jusqu'où j'arrivais à aller seul, en optimisant les calculs matriciels avec NumPy.</p>
+      <p>Face à l'abstraction de certains cours de maths, il m'arrive de douter de leur utilité concrète. Ce projet me rappelle précisément à quoi ils servent.</p>
     </Body>
   ),
   monde: (
     <Body>
-      <p>Ce qui m'a le plus surpris : la <span className="copper-text">proportion de temps passée à communiquer</span>. Une réunion de 30 minutes avec le client a débloqué une semaine de développement. La communication technique est une compétence à part entière.</p>
-      <p><strong className="text-neutral-100">Gestion des blocages :</strong> lors du stage ERP, une fonctionnalité critique s'est révélée impossible dans l'architecture initiale. J'ai proposé une refonte partielle du schéma — difficile à présenter en milieu de projet, mais nécessaire.</p>
-      <p><strong className="text-neutral-100">Code reviews :</strong> au début, recevoir des remarques sur mon code m'était inconfortable. Maintenant je les sollicite.</p>
+      <p>Ce qui m'a le plus surpris : <span className="copper-text">le temps que demande la communication</span>. Un échange de 30 minutes avec le client a pu débloquer une semaine entière de développement. Transmettre clairement une information technique est une compétence à part entière.</p>
+      <p><strong className="text-neutral-100">Gestion des blocages :</strong> lors du stage ERP, une fonctionnalité essentielle s'est révélée impossible à intégrer dans le schéma initial. J'ai proposé une refonte partielle de la base. La présenter en plein milieu du projet a été délicat, mais nécessaire pour la suite.</p>
+      <p><strong className="text-neutral-100">Code reviews :</strong> au début, je prenais les remarques sur mon code comme des critiques personnelles. Avec le recul, j'y ai vu le moyen le plus rapide de progresser, et maintenant je sollicite un avis avant même d'avoir fini.</p>
       <p><strong className="text-neutral-100">Outils mobilisés :</strong> GitLab branches feature · Docker environnement unifié · Jenkins CI/CD · Slack · Notion documentation.</p>
     </Body>
   ),
@@ -151,7 +151,7 @@ const TabPanels = {
 
       <div className="mt-6">
         <p className="font-mono text-[11px] uppercase tracking-[0.25em] copper-text-strong mb-3">Dimension internationale</p>
-        <p className="italic font-display text-lg">« Mon parcours commence à Dakar. Le logiciel SAV que je développe chez DEVEA est déployé dans des pays africains et européens. Je connais les deux côtés. »</p>
+        <p className="italic font-display text-lg">« Mon parcours commence à Dakar, à l'Université Cheikh Anta Diop. Le logiciel SAV que je développe chez DEVEA est utilisé par des équipes en Afrique et en Europe : je connais les deux côtés. »</p>
       </div>
 
       <div className="mt-6">

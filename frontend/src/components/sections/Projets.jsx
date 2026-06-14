@@ -1,5 +1,5 @@
 import React from "react";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Lock } from "lucide-react";
 import { PROJECTS } from "../../data/portfolio";
 import { Reveal } from "../Reveal";
 
@@ -17,7 +17,7 @@ const ProjectCard = ({ project, index }) => {
             <img
               src={project.image}
               alt={project.name}
-              className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700"
+              className="absolute inset-0 w-full h-full object-contain opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700"
               loading="lazy"
             />
           ) : (
@@ -59,16 +59,27 @@ const ProjectCard = ({ project, index }) => {
           </div>
 
           <div className="mt-7 pt-5 border-t border-copper-400/10 flex items-center justify-between">
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.22em] text-copper-200 hover:text-copper-100"
-              data-testid={`project-link-${project.id}`}
-            >
-              <Github className="w-3.5 h-3.5" strokeWidth={1.4} /> Voir le code
-            </a>
-            <ExternalLink className="w-4 h-4 text-neutral-600 group-hover:text-copper-200 transition-colors" strokeWidth={1.4} />
+            {project.private ? (
+              <p
+                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.22em] text-neutral-500"
+                data-testid={`project-link-${project.id}`}
+              >
+                <Lock className="w-3.5 h-3.5" strokeWidth={1.4} /> Projet d'entreprise · Code non partageable
+              </p>
+            ) : (
+              <>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.22em] text-copper-200 hover:text-copper-100"
+                  data-testid={`project-link-${project.id}`}
+                >
+                  <Github className="w-3.5 h-3.5" strokeWidth={1.4} /> Voir le code
+                </a>
+                <ExternalLink className="w-4 h-4 text-neutral-600 group-hover:text-copper-200 transition-colors" strokeWidth={1.4} />
+              </>
+            )}
           </div>
         </div>
       </article>

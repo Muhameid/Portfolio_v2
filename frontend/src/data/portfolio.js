@@ -3,7 +3,7 @@ export const IDENTITY = {
   name: "Mouhammed Diop",
   role: "Développeur Full Stack · Futur Ingénieur IA",
   oneliner:
-    "Du back-end Laravel à la simulation 3D de 5000 étoiles — je construis des logiciels qui tiennent la complexité.",
+    "Formé aux sciences dures avant de basculer dans l'informatique, je passe mon temps à modéliser, structurer et mettre en production des logiciels qui tiennent la charge.",
   email: "diopmouhammed1@gmail.com",
   phone: "+33 7 50 00 03 86",
   location: "Bonneuil-sur-Marne, 94380, France",
@@ -16,23 +16,19 @@ export const IDENTITY = {
 };
 
 export const ASSETS = {
-  miaam:
-    "https://customer-assets.emergentagent.com/job_sagittarius-engine/artifacts/4aykwgjy_miaam1.jpeg",
-  voronoi:
-    "https://customer-assets.emergentagent.com/job_sagittarius-engine/artifacts/088fozqg_Capture%20d%E2%80%99%C3%A9cran%202026-02-19%20205541.jpg",
-  cnam:
-    "https://customer-assets.emergentagent.com/job_sagittarius-engine/artifacts/h7f39huy_IMG_3720.jpg",
-  globe:
-    "https://customer-assets.emergentagent.com/job_sagittarius-engine/artifacts/irwyvaw5_IMG_5917.jpg",
+  miaam: "/images/miaam1.jpeg",
+  voronoi: "/images/voronoi.png",
+  cnam: "/images/cnam.jpg",
+  globe: "/images/globe.jpg",
 };
 
-export const PRESENTATION = `Un soir de 2024, j'ai passé quatre heures à implémenter les équations de Kepler depuis zéro — trajectoires stellaires, lentilles gravitationnelles, 5000 corps en temps réel. Personne ne me l'avait demandé. C'est peut-être la meilleure façon de vous dire qui je suis.
+export const PRESENTATION = `Mon parcours se découpe en deux temps : un socle théorique en maths et physique à Dakar, puis une bascule vers l'informatique à l'IUT de Villetaneuse. Ce glissement des sciences dures vers le logiciel a façonné ma façon de travailler : avant d'écrire du code, j'ai besoin de comprendre la structure du problème, sinon j'ai l'impression de construire sur du sable.
 
-Je viens de Dakar. DEUG en Maths-Physique-Informatique à Cheikh Anta Diop, puis aller simple pour Paris et BUT Informatique à Villetaneuse. Ce bagage scientifique, je le retrouve dans tout ce que je construis : je modélise avant d'ouvrir un éditeur, je cherche pourquoi quelque chose tient avant de l'utiliser.
+Cette bascule se retrouve dans mes projets, mais aussi à côté. Sur Sagittarius-A-Engine, j'ai passé des soirées à optimiser les calculs vectoriels d'un moteur de dynamique stellaire codé from scratch. Le reste du temps, je lis Dostoïevski ou je traîne dans les collections du CNAM. Ce qui me plaît dans ces trois trucs, au fond, c'est la même chose : comprendre comment un système, qu'il soit mécanique, narratif ou logiciel, tient debout.
 
-Chez DEVEA, j'ai passé deux jours sur un schéma de base de données avant d'écrire la première migration. Sur Miaam, j'ai réécrit l'algorithme de recommandation parce que la V1 marchait — mais ne me satisfaisait pas. Sur le Voronoï, j'ai convaincu l'équipe d'abandonner notre implémentation artisanale en cours de route. Décision difficile. Bonne décision.
+Cette curiosité, je l'ai retrouvée chez DEVEA. Repository Pattern, RBAC par site, pipelines CI/CD sous Jenkins : la partie la plus intéressante n'était pas la techno en elle-même, mais le fait de devoir faire tenir tout ça pour des techniciens dans plusieurs pays, avec des règles d'accès et d'isolation des données différentes selon les sites.
 
-En dehors de ça : Dostoïevski, les musées des sciences, le foot. Et en septembre 2026, le Cycle Ingénieur ISEP en alternance — Architecture Logicielle, Data & IA. Je cherche une entreprise qui construit des choses qui durent.`;
+En septembre 2026, je commence le Cycle Ingénieur à l'ISEP en alternance (Architecture Logicielle, Data & IA), et je suis encore en recherche d'entreprise pour ça. Ce que je cherche : une équipe où on prend le temps de comprendre un problème avant de foncer dans le code.`;
 
 export const SOFT_SKILLS = [
   "Capacité à tenir la complexité : logiciel SAV from scratch, déployé à l'international, en 6 mois",
@@ -115,18 +111,19 @@ export const PROJECTS = [
     link: "https://github.com/Muhameid",
     image: null,
     cover: "linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 50%, #2D1B08 100%)",
+    private: true,
   },
   {
     id: "miaam",
     name: "Miaam — Recommandation Anti-Gaspillage",
     badge: "SAE S501 · Équipe de 6",
     description:
-      "Application mobile Flutter de recommandation de recettes alignée sur l'ODD 12. Recommandation 100% locale, zéro serveur, zéro fuite de données. Algorithme SVD 27 dimensions sur 487 recettes et 2146 ingrédients — satisfaction utilisateur 40% → 85%. Topologie culturelle de 100+ cuisines. 50ms de calcul, −50% batterie vs apps serveur.",
-    contribution: "Algorithme de recommandation — SVD 27D, pondération temporelle, normalisation L2, similarité cosinus.",
+      "Application mobile Flutter de recommandation de recettes alignée sur l'ODD 12. Recommandation 100% locale, zéro serveur, zéro fuite de données. Algorithme SVD 27 dimensions sur 487 recettes et 2146 ingrédients, satisfaction utilisateur passée de 40% à 85%. Topologie culturelle de 100+ cuisines. 50ms de calcul, −50% batterie vs apps serveur.",
+    contribution: "Algorithme de recommandation : SVD 27D, pondération temporelle, normalisation L2, similarité cosinus.",
     team: "6 développeurs · 150+ commits · 40+ PRs",
     tags: ["Flutter", "Dart", "Python", "SQLite", "SVD", "ML", "scipy"],
     link: "https://github.com/Muhameid",
-    image: "https://customer-assets.emergentagent.com/job_sagittarius-engine/artifacts/4aykwgjy_miaam1.jpeg",
+    image: "/images/miaam1.jpeg",
   },
   {
     id: "voronoi",
@@ -136,7 +133,7 @@ export const PROJECTS = [
       "Double implémentation : application web interactive JavaScript (d3-delaunay, Canvas 2D, drag-and-drop, export PNG) + CLI Python robuste (scipy, matplotlib, export SVG/PNG/JPG, tests Pytest complets). Architecture modulaire, Git workflow pro (9 PRs, 20 commits).",
     tags: ["JavaScript", "Python", "d3-delaunay", "scipy", "Canvas", "Jest", "Pytest"],
     link: "https://github.com/Adrian-Galindo/diagramme_Voronoi",
-    image: "https://customer-assets.emergentagent.com/job_sagittarius-engine/artifacts/088fozqg_Capture%20d%E2%80%99%C3%A9cran%202026-02-19%20205541.jpg",
+    image: "/images/voronoi.png",
   },
   {
     id: "sagittarius",
@@ -146,8 +143,7 @@ export const PROJECTS = [
       "Moteur de simulation physique from scratch, zéro framework tiers. Simule 5000+ corps célestes en temps réel : algèbre matricielle, trajectoires de Kepler, lentilles gravitationnelles. Optimisation vectorielle NumPy.",
     tags: ["Python", "NumPy", "Physique computationnelle"],
     link: "https://github.com/Muhameid",
-    image: null,
-    cover: "radial-gradient(circle at 30% 30%, #2D1B08 0%, #050505 70%)",
+    image: "/images/voie-lactee.jpg",
   },
   {
     id: "france-academy",
@@ -157,8 +153,7 @@ export const PROJECTS = [
       "Plateforme de gestion scolaire multi-tenant : isolation stricte des données par organisation. Repository Pattern + Eloquent ORM.",
     tags: ["Laravel 9", "PostgreSQL", "PHP", "Multi-tenant"],
     link: "https://github.com/Muhameid",
-    image: null,
-    cover: "linear-gradient(160deg, #0A0A0A 0%, #1A0F05 100%)",
+    image: "/images/france-academy.png",
   },
   {
     id: "chatapp",
@@ -168,8 +163,7 @@ export const PROJECTS = [
       "Architecture événementielle asynchrone via Ratchet (PHP/ReactPHP). WebSocket persistant, I/O non-bloquants.",
     tags: ["PHP", "ReactPHP", "WebSocket"],
     link: "https://github.com/Muhameid",
-    image: null,
-    cover: "linear-gradient(135deg, #0A0A0A 0%, #161616 60%, #1F1208 100%)",
+    image: "/images/chatapp.jpg",
   },
 ];
 
@@ -210,27 +204,27 @@ export const COMPETENCES = [
     level: 4,
     levelLabel: "Avancé",
     proofs: "SAV DEVEA prod internationale · ERP Multi-tenant · Miaam Flutter/ML · Voronoï JS+Python",
-    eval: "J'ai évolué de scripts PHP à des architectures Repository Pattern en prod internationale. Ce qui m'a changé : comprendre que l'architecture se décide avant le code.",
+    eval: "J'ai évolué de scripts PHP isolés vers des architectures Repository Pattern, pour des applications utilisées à l'international. Ce qui a changé : je stabilise l'architecture avant d'écrire la première ligne.",
   },
   {
     name: "Optimiser des applications informatiques",
     level: 3,
     levelLabel: "Intermédiaire-Avancé",
     proofs: "Miaam : −70% requêtes SQL, −50% batterie, SVD 50ms · Repository Pattern DEVEA",
-    eval: "Depuis Miaam — 15 000 requêtes là où une JOIN suffisait — l'optimisation est devenue un réflexe. J'ai encore à progresser sur le profiling systématique.",
+    eval: "Miaam a marqué un tournant le jour où j'ai remplacé 15 000 requêtes par une seule jointure SQL. Depuis, l'optimisation est un réflexe, mais je dois encore systématiser le profiling.",
   },
   {
     name: "Collaborer au sein d'une équipe informatique",
     level: 4,
     levelLabel: "Avancé",
     proofs: "Miaam 6 devs · 150+ commits · 40+ PRs · Trello · Voronoï 3 devs · Stages DEVEA",
-    eval: "J'ai appris que les conflits techniques se règlent par la communication avant le code. Et que documenter son travail, c'est respecter ses coéquipiers.",
+    eval: "La gestion de projets en groupe m'a montré que les désaccords techniques se règlent par la discussion, pas en réécrivant le code de quelqu'un sans en parler. Et documenter son travail, c'est respecter celui des autres.",
   },
 ];
 
 export const TESTIMONIAL = {
   quote:
-    "Mouhammed est arrivé avec deux jours d'avance et une liste de questions sur l'architecture existante. Je n'avais pas l'habitude de ça avec des stagiaires. Il a refait le back-end proprement, documenté ce qu'il touchait, et le module de paiement qu'il a intégré tourne toujours sans accroc. Si j'ai un autre projet, je le rappelle.",
+    "Ce qui m'a marqué chez Mouhammed, c'est qu'il est arrivé avec déjà des questions sur l'architecture existante, alors que c'est plutôt l'inverse avec un stagiaire d'habitude. Il a repris le back-end, documenté au fur et à mesure, et le module de paiement qu'il a posé fonctionne toujours sans qu'on ait eu à y retoucher.",
   author: "Giancarlo Collantes, développeur indépendant",
   context: "Tuteur de stage · Projet e-learning · Paris, Mai–Juillet 2024",
 };
