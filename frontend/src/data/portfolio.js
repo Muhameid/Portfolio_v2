@@ -20,6 +20,7 @@ export const ASSETS = {
   voronoi: "/images/voronoi.png",
   cnam: "/images/cnam.jpg",
   globe: "/images/globe.jpg",
+  portrait: "/images/mouhammed-diop.jpg",
 };
 
 export const PRESENTATION = `Mon parcours se découpe en deux temps : un socle théorique en maths et physique à Dakar, puis une bascule vers l'informatique à l'IUT de Villetaneuse. Ce glissement des sciences dures vers le logiciel a façonné ma façon de travailler : avant d'écrire du code, j'ai besoin de comprendre la structure du problème, sinon j'ai l'impression de construire sur du sable.
